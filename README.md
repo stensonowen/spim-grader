@@ -4,3 +4,4 @@ Uses python's subprocesses library to spawn processes to test MIPS programs usin
 Runs all sample test files in /samples against all submitted homeworks in /submissions. Stores output in /results.
 /samples and /submissions must exist for script to run.
 See [/samples/.example](/samples/.example) and [/submissions/.example](/samples.example) for instructions on specific input.
+NOTE: I've tested this on linux (MINT Rafaela x64) but it might be wonky on windows because of its use of command-line spim and threadingi. YMMV
