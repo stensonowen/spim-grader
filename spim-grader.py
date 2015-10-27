@@ -48,6 +48,8 @@ def grade(p, f):
     else:
         f.write("\t**PROCESS FAILED TO COMPILE**\n")
         f.write(output + '\n' + errors + '\n'*2)
+    #p.kill()    #remembered to add this recently; shouldn't break things...
+    #lol it did. Hmm...
     f.close() 
 
 def generate_filename(submission, sample):
