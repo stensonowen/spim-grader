@@ -87,9 +87,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-    #sub = "hw2_stenso_attempt_x_hw2.c"
-    #sam = "42\n"
-    #p = run(sub, sam)
-    #output_file = generate_filename(sub, "tst")
-    #grade(p, output_file)
 
