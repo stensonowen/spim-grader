@@ -10,4 +10,4 @@ See [/samples/.example](/samples/.example) and [/submissions/.example](/submissi
 
 Prerequisites: python 2.7 and cli spim (apt-get spim)
 
-NOTE: I've tested this on linux (MINT Rafaela x64) but it might be wonky on windows because of its use of command-line spim and threadingi. YMMV
+NOTE: I've tested this on linux (MINT Rafaela x64) but it might be wonky on windows because of its use of command-line spim and threading. YMMV
