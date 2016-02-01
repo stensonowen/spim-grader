@@ -11,8 +11,6 @@ from subprocess import Popen, PIPE, STDOUT
 def run(fn, sample_input='\n'):
     #start process and write input
     proc = Popen(["spim", "-file", "submissions/"+fn], stdin=PIPE, stdout=PIPE, stderr=PIPE)
-    #proc = Popen("spim -file submissions/"+fn, stdin=PIPE, stdout=PIPE, stderr=PIPE, shell=True)
-    #assert input[-1:] == "\n"
     if sample_input[-1:] != '\n':
         print "Warning: last line (of file below) must end with newline char to be submitted. Assuming it should..."
         sample_input = sample_input + '\n'
@@ -49,8 +47,6 @@ def grade(p, f):
     else:
         f.write("\t**PROCESS FAILED TO COMPILE**\n")
         f.write(output + '\n' + errors + '\n'*2)
-    #p.kill()    #remembered to add this recently; shouldn't break things...
-    #lol it did. Hmm...
     f.close() 
 
 def generate_filename(submission, sample):
@@ -64,7 +60,7 @@ def generate_filename(submission, sample):
     return rcs + '__' + sample
 
 def main():
-    #make dirs if necessary
+    #no use in running if content directories aren't present
     assert os.path.isdir("samples")
     assert os.path.isdir("submissions")
     if os.path.isdir("results") is False:
